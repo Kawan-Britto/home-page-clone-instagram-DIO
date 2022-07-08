@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #0095f6;
+}
+body {
+  background-color: rgb(243, 243, 243);
+  min-height: 100vh;
+}
+.container {
+  margin: 0.5rem 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+figure {
+  display: none;
+}
+
+section {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  align-items: center;
+}
+section .continue-as {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+.button {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+section .continue-as .photo-perfil img {
+  height: 6rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+section .other-accounts {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+section .other-accounts p:nth-child(1) {
+  color: rgb(160, 160, 160);
+}
+
+section .mobile {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+section .mobile img{
+  height: 3rem;
+  width: 10rem;
+}
+
+footer {
+  margin-top: 2.5rem;
+  display: inline-flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media only screen and (min-width: 800px){
+  figure {
+    display: block;
+    width: 50%;
+  }
+  figure img {
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
+  .container {
+    display: flex;
+  }
+
+  section {
+    gap: 0
+  }
+  section .continue-as, .other-accounts{
+    border: 0.5px solid rgb(160, 160, 160);
+    padding: 1.5rem 4.5rem;
+    box-shadow: 6px 4px 7px 1px rgb(160, 160, 160);
+  }
+}
